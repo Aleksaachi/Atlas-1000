@@ -151,10 +151,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   worldSeed: 0
   gridSize: {x: 500, y: 500}
-  noiseScale: 0.02
+  noiseScale: 0.0125
   noiseOffset: 0
-  centerHeightFocus: 0.3
+  centerHeightFocus: 0.45
   borderSize: 5
+  islandStretchCoefficient: 0
 --- !u!114 &334806895
 MonoBehaviour:
   m_ObjectHideFlags: 0
