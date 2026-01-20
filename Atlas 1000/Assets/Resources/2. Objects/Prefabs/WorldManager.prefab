@@ -1,0 +1,107 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5336856017494832262
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5326159917657291198}
+  - component: {fileID: 2028901444630660954}
+  - component: {fileID: 6349000799081726754}
+  m_Layer: 0
+  m_Name: WorldManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5326159917657291198
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5336856017494832262}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2028901444630660954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5336856017494832262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71b05e9af920441448a536e0ecc2c548, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  tilemapWorld: {fileID: 0}
+  tilemapMountains: {fileID: 0}
+  tilesWorld:
+  - {fileID: 11400000, guid: 4e142d0202e76024e98522e437091f1e, type: 2}
+  - {fileID: 11400000, guid: 08ab23876e598e844a02cc42a59f4fde, type: 2}
+  - {fileID: 11400000, guid: 4c9833d676aeb524b8d101c22a385ba5, type: 2}
+  - {fileID: 11400000, guid: 8a90631a3eb2d294c933f05b8a503d20, type: 2}
+  - {fileID: 11400000, guid: 5dc384ee140bf4144844a7cb5410e672, type: 2}
+  - {fileID: 11400000, guid: 43cdb48f30fa76841bb868eb85bdefbc, type: 2}
+  - {fileID: 11400000, guid: 94ac40767c24a3741b7fbe0f95a7d33e, type: 2}
+  - {fileID: 11400000, guid: e4ae37e47dbe49a488c9f0ff286f50c4, type: 2}
+  - {fileID: 11400000, guid: d7b8d6de3fac0c84bbfcf69a1677bb00, type: 2}
+  - {fileID: 11400000, guid: 1c7c55b81cdb38a49ac08f5ec8734d81, type: 2}
+  - {fileID: 11400000, guid: eff6605e9fe37ce4b920e4b2e268be97, type: 2}
+  - {fileID: 11400000, guid: 38fe5b73dd2b68340abe65fca322fa32, type: 2}
+  - {fileID: 11400000, guid: 4c136d8551c4de34684c58f342cfb6a3, type: 2}
+  - {fileID: 11400000, guid: 33b93278266ce014d8b499e35c3934f5, type: 2}
+  - {fileID: 11400000, guid: 180e7c124d3dcac4db26e524e694a16f, type: 2}
+  tilesMountains:
+  - {fileID: 11400000, guid: d36cba11301d8834798a8b8e7c5e0742, type: 2}
+  - {fileID: 11400000, guid: 13d50a38ad03dce4ebb0da8b3e101852, type: 2}
+  - {fileID: 11400000, guid: d68a1b4c1945051469ee483fc14a527c, type: 2}
+  - {fileID: 11400000, guid: f15ad8e25423a824898c1676cbd36241, type: 2}
+  - {fileID: 11400000, guid: ecc1e73a3e8e9e14e83eb42bea816fb7, type: 2}
+  - {fileID: 11400000, guid: 9845b63a47bb897438131ec1fd82373b, type: 2}
+  - {fileID: 11400000, guid: d95ac9f75cb425548b6d36d5320939a8, type: 2}
+  - {fileID: 11400000, guid: d2fd0a50a65399d4cbd4db8ed1fbdd84, type: 2}
+  riverPrefab: {fileID: 5329981548494416434, guid: b21a0fd75e6c92641ad91c34a8c70123, type: 3}
+  DEBUG_REGENERATE: 0
+  loadFromSeed: 0
+--- !u!114 &6349000799081726754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5336856017494832262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dba1270a8d1c09646bac3694ecf960d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  worldSeed: 0
+  gridSize: {x: 256, y: 256}
+  borderSize: 5
+  islandSizeCoefficient: 2
+  noiseScale: 0.011
+  centerHeightFocus: 0.5
+  waterHeight: 0.57
+  mountainS1Height: 0.65
+  mountainS2Height: 0.7
+  mountainS3Height: 0.75
+  mountainS4Height: 0.82
+  riverAmount: 15
+  riverSourceMinDistance: 4
+  riverMaxLenght: 32
+  riverUphillPenalty: 5
+  riverUphillPenaltyThreshold: 0.001
+  noiseOffset: 0
+  islandStretchCoefficient: 0
